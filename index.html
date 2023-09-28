@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check My PostCode Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4d66119999.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-5" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/open-sans" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js"></script>         
+</head>
+<body>
+    <header>
+        <nav class="first-nav">
+            <div class="first-nav-left">
+                <i class="fa-solid fa-house"></i>
+                <a href="#Home">Check My Postcode</a>
+            </div>
+             <div class="first-nav-right">
+                <i class="fa-regular fa-circle-question"></i>
+                <a href="#" id="help">Help</a>
+            </div>
+        </nav>
+    </header>
+    <header class="second-menu">
+        <ul>
+            <li><a href="#">PostCode Lists</a> <i class="fa-solid fa-chevron-down"></i>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">By Country</a></li>
+                        <li ><a href="#">By Introduction Date</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">PostCode Maps</a> <i class="fa-solid fa-chevron-down"></i>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">User Type</a></li>
+                        <li ><a href="#">Use Category</a></li>
+                        <li ><a href="#">Council Tax Band</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Nearest Postcode</a></i></li>
+            <li><a href="#">PostCode Lottery</a></i></li>
+        </ul>
+    </header>
+
+    <section class="search_area">
+        <div class="section-banner" id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16248869.764090814!2d-0.659277356415363!3d5.793566685576677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1695287690752!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>HELLO <br><span>Do you want to check your Postcode?</span></p>
+        </div>
+        
+        <form class="search-form">
+            <div class="check-list">
+                <div class="check1">
+                    <input type="radio" name="locate" id="check1" checked="checked">
+                    <label for="check">Check My Postcode</label>
+                </div>
+                <div class="check2">
+                    <input type="radio" name="locate" id="locate">
+                    <label for="locate">Locate Me</label>
+                </div>
+            </div>
+
+            
+            <div class="search_select">
+                <div class="search-area has-search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="search" name="search" class="form-control" id="search" placeholder= "Address, Country, City or Postcode...">
+                    <button type="submit" id="search-button">Search</button>
+                </div>
+
+                <div class="search-dropdown">
+                    <select name="state" id="state" required>
+                        <option value="State" selected disabled>State/Province</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Abuja">Abuja</option>
+                        <option value="Enugu">Enugu</option>
+                        <option value="Rivers">Rivers</option>
+                    </select>
+                </div>
+            </div>
+        </form>    
+            
+       
+    </section>
+
+
+    <!-- booking section starts -->
+   <section class="booking-main">
+        <div class="booking-inner-cover">
+            <div class="inner-left">
+                <input type="text" placeholder="e.g. city, region, district..">
+                <input type="date" name="date" id="">
+                <button type="submit">Search</button>
+            </div>
+            <div class="inner-right">
+                <button type="button"><img src="images/guesticon.png" alt=""></i>Guests</button>
+            </div>
+        </div>
+    </section>
+    <!-- booking section ends -->
+
+    <!-- -----image section under booking page -->
+    <section class="booking-images">
+        <div class="advert-divider1">
+            <div class="advert-container1">
+                <div class="first-image">
+                    <div class="advert-text">
+                        <div class="adv-txt">
+                            <h4>Trondheim</h4>
+                            <img src="images/uk.png" alt="">
+                        </div>
+                        <h5>45 properties</h5>
+                    </div>
+                </div>
+                <p>Double from</p>
+            </div>
+                
+
+            <div class="advert-container2">
+                <div class="second-image">
+                    <div class="advert-text">
+                        <div class="adv-txt">
+                            <h4>Sixt</h4>
+                            <img src="images/france.png" alt="">
+                        </div>
+                        <h5>21 properties</h5>
+                    </div>
+                        
+                </div>
+                <p>Double from</p>
+            </div>
+                
+
+            <div class="advert-container3">
+                <div class="third-image">
+                    <div class="advert-text">
+                        <div class="adv-txt">
+                            <h4>Bransgore</h4>
+                            <img src="images/Norway.png" alt="">
+                        </div>
+                        <h5>4 properties</h5>
+                    </div>
+                        
+                </div>
+                <p>Double from</p>
+            </div>
+                
+        </div>
+
+        <div class="advert-divider2">
+            <div class="link-tag">
+                <div class="left-link">
+                    <img src="images/uk.png" alt="">
+                    <p>Trondheim</p>
+                </div>
+                <div class="right-link">
+                    <p>from</p>
+                </div>
+            </div>
+            <div class="link-tag">
+                <div class="left-link">
+                    <img src="images/france.png" alt="">
+                    <p>Sixt</p>
+                </div>
+                <div class="right-link">
+                    <p>from</p>
+                </div>
+            </div>
+            <div class="link-tag">
+                <div class="left-link">
+                    <img src="images/Norway.png" alt="">
+                    <p>Brangore</p>
+                </div>
+                <div class="right-link">
+                    <p>from</p>
+                </div>
+            </div>
+            <div class="link-tag">
+                <div class="left-link">
+                    <img src="images/spain.png" alt="">
+                    <p>Cala Anguila</p>
+                </div>
+                <div class="right-link">
+                    <p>from</p>
+                </div>
+            </div>
+            <div class="link-tag">
+                <div class="left-link">
+                    <img src="images/france.png" alt="">
+                    <p>Chiusanico</p>
+                </div>
+                <div class="right-link">
+                    <p>from</p>
+                </div>
+            </div>
+            <div class="link-tag">
+                <div class="left-link">
+                    <img src="images/finland.png" alt="">
+                    <p>Kavousion</p>
+                </div>
+                <div class="right-link">
+                    <p>from</p>
+                </div>
+            </div>
+            <div class="link-tag">
+                <div class="left-link">
+                    <img src="images/italy.png" alt="">
+                    <p>Pieve Di Ledro</p>
+                </div>
+                <div class="right-link">
+                    <p>from</p>
+                </div>
+            </div>
+            <div class="link-tag">
+                <div class="left-link">
+                    <img src="images/france.png" alt="">
+                    <p>Vierville-su-Mer</p>
+                </div>
+                <div class="right-link">
+                    <p>from</p>
+                </div>
+            </div>
+            <button type="submit"><i class="fa fa-search"></i>Discover</button>
+        </div>
+    </section>
+    <!-- -----image section under booking page ends-->
+
+    <section class="popular-postcodes">
+        <div class="popular-text">
+            <p>Popular Postcode</p>
+            <a href="postcode.html" target="_blank">View All</a>
+        </div>
+
+        <div class="image-container">
+            <div class="popular-image">
+                <img src="images/hillbuilding.png" alt="building on rock">
+                <div class="inner-locate">
+                    <img src="images/locationtag.png" alt="locate">
+                    <h3>SA99 1DU</h3>
+                </div>
+                <p>Very popular</p>
+            </div>
+
+            <div class="popular-image">
+                <img src="images/acientbuilding.png" alt="acient building">
+                <div class="inner-locate">
+                    <img src="images/locationtag.png" alt="locate">
+                    <h3>W1A 1AA</h3>
+                </div>
+                <p>Very popular</p>
+            </div>
+
+            <div class="popular-image">
+                <img src="images//snapwater.png" alt="bluewater">
+                <div class="inner-locate">
+                    <img src="images/locationtag.png" alt="locate">
+                    <h3>SW1A 1AA</h3>
+                </div>
+                <p>Very popular</p>
+            </div>
+
+            <div class="popular-image">
+                <img src="images/manybuilding.png" alt="building on rock">
+                <div class="inner-locate">
+                    <img src="images/locationtag.png" alt="locate">
+                    <h3>WC2N 5DU</h3>
+                </div>
+                <p>Very popular</p>
+            </div>
+        </div>
+
+
+        <div class="image-container">
+            <div class="popular-image">
+                <img src="images/sunset.png" alt="sunset">
+                <div class="inner-locate">
+                    <img src="images/locationtag.png" alt="locate">
+                    <h3>LE87 2BB</h3>
+                </div>
+                <p>Very popular</p>
+            </div>
+
+            <div class="popular-image">
+                <img src="images/bluewater.png" alt="building on rock">
+                <div class="inner-locate">
+                    <img src="images/locationtag.png" alt="locate">
+                    <h3>SL6 3QQ</h3>
+                </div>
+                <p>Very popular</p>
+            </div>
+
+            <div class="popular-image">
+                <img src="images/chairview.png" alt="building on rock">
+                <div class="inner-locate">
+                    <img src="images/locationtag.png" alt="locate">
+                    <h3>BD1 1AH</h3>
+                </div>
+                <p>Very popular</p>
+            </div>
+
+            <div class="popular-image">
+                <img src="images/nightglow.png" alt="building on rock">
+                <div class="inner-locate">
+                    <img src="images/locationtag.png" alt="locate">
+                    <h3>WC2H 9JQ</h3>
+                </div>
+                <p>Very popular</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Things to note section -->
+
+    <article>
+        <div class="article-container">
+            <div class="text-content-container">
+                <h4>Things to note:</h4>
+                <ul>
+                    <li><i class="fa-regular fa-circle-check"></i>Use check My Postcode to find out all the key information for your local Postcode.</li>
+                    <li><i class="fa-regular fa-circle-check"></i>Use check My Postcode to find out all the key information for your local Postcode.</li>
+                    <li><i class="fa-regular fa-circle-check"></i>Find out typical house price, council tax bands and business rateable values.</li>
+                    <li><i class="fa-regular fa-circle-check"></i>See who represents you in parliament and your local councils, and discover how Ofsted has rated local schools.</li>
+                    <li><i class="fa-regular fa-circle-check"></i>Check whether superfast broadband is available, and see how popular it is.</li>
+                    <li><i class="fa-regular fa-circle-check"></i>See where your Postcode is on a map.</li>
+                    <li><i class="fa-regular fa-circle-check"></i>Find the nearest Postcode to where you are right now.</li>
+                    <li><i class="fa-regular fa-circle-check"></i>Read what other people have said about your Postcode, and leave your own comments for others to read.</li>
+                </ul>
+            </div>
+        </div>
+    </article>
+
+
+<!-- frequently asked questions section -->
+    <article class="FAQ">
+        <div class="faq-container">
+            <h3>Frequestly Asked Questions</h3>
+            <div class="faq-accordion">
+                <div class="accordion-item" data-responsive-accordion-tabs="accordion medium-tabs large-accordion" id="question1">
+                    <a class="accordion-link" href="#question1">
+                        Discover related topics
+                        <ion-icon class="chevron-forward-outline" name="chevron-forward-outline"></ion-icon>
+                        <ion-icon class="chevron-down-outline" name="chevron-down-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim alias voluptates quam exercitationem error non, laborum illo repellendus? Voluptates sequi placeat sed ad, minus veniam iste eaque facilis quidem numquam!</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-responsive-accordion-tabs="accordion medium-tabs large-accordion" id="question2">
+                    <a class="accordion-link" href="#question2">
+                        Fitzrovia
+                        <ion-icon class="chevron-forward-outline" name="chevron-forward-outline"></ion-icon>
+                        <ion-icon class="chevron-down-outline" name="chevron-down-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim alias voluptates quam exercitationem error non, laborum illo repellendus? Voluptates sequi placeat sed ad, minus veniam iste eaque facilis quidem numquam!</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-responsive-accordion-tabs="accordion medium-tabs large-accordion" id="question3">
+                    <a class="accordion-link" href="#question3">
+                        Cheapest Postcode in UK
+                        <ion-icon class="chevron-forward-outline" name="chevron-forward-outline"></ion-icon>
+                        <ion-icon class="chevron-down-outline" name="chevron-down-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim alias voluptates quam exercitationem error non, laborum illo repellendus? Voluptates sequi placeat sed ad, minus veniam iste eaque facilis quidem numquam!</p>
+                    </div>
+                </div>
+
+                
+                <div class="accordion-item" data-responsive-accordion-tabs="accordion medium-tabs large-accordion" id="question4">
+                    <a class="accordion-link" href="#question4">
+                        PostCode for United Kingdom
+                        <ion-icon class="chevron-forward-outline" name="chevron-forward-outline"></ion-icon>
+                        <ion-icon class="chevron-down-outline" name="chevron-down-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim alias voluptates quam exercitationem error non, laborum illo repellendus? Voluptates sequi placeat sed ad, minus veniam iste eaque facilis quidem numquam!</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-responsive-accordion-tabs="accordion medium-tabs large-accordion" id="question5">
+                    <a class="accordion-link" href="#question5">
+                        Postal Code for United Kingdom
+                        <ion-icon class="chevron-forward-outline" name="chevron-forward-outline"></ion-icon>
+                        <ion-icon class="chevron-down-outline" name="chevron-down-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim alias voluptates quam exercitationem error non, laborum illo repellendus? Voluptates sequi placeat sed ad, minus veniam iste eaque facilis quidem numquam!</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-responsive-accordion-tabs="accordion medium-tabs large-accordion" id="question6">
+                    <a class="accordion-link" href="#question6">
+                        United Kingdom Pincode
+                        <ion-icon class="chevron-forward-outline" name="chevron-forward-outline"></ion-icon>
+                        <ion-icon class="chevron-down-outline" name="chevron-down-outline"></ion-icon>
+                    </a>
+                    <div class="answer">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim alias voluptates quam exercitationem error non, laborum illo repellendus? Voluptates sequi placeat sed ad, minus veniam iste eaque facilis quidem numquam!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+
+
+    <!-- ------footer section -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-home">
+                <i class="fa-solid fa-house"></i>
+                <a href="#">Check My Postcode</a>
+            </div>
+            <div class="footer-quick-links">
+                <h3 class="quick-link">QUICK LINKS</h3>
+                <ul class="quick-list">
+                    <li><a href="">Postcode by country</a></li>
+                    <li><a href="">Postcode by introduction Date</a></li>
+                    <li><a href="">Postcode Near Me</a></li>
+                    <li><a href="">Postcode Lottery</a></li>
+                </ul>
+            </div>
+
+         
+            <div class="footer-more-links">
+                <h3>MORE LINKS</h3>
+                <ul>
+                    <li><a href="#">Postcode Map by User Type</a></li>
+                    <li><a href="#">Postcode Map by User Category</a></li>
+                    <li><a href="">Postcode Map by Council Tax Band</a></li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <h3>SOCIALS</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/itsdeyoka" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.twitter.com/deyoka_official" target="_blank">Twitter</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+            </div>
+            <div class="footer-about">
+                <h3>ABOUT</h3>
+                <ul>
+                    <li><a href="#">About this Website</a></li>
+                    <li><a href="#">Disclaimers and Limitations</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-container-last">
+            <p>Check My Postcode</p>
+            <p>CheckMyPostcode.UK is a <span>Good Website</span></p>
+        </div>
+
+        <div class="circle"><a href="#help"><i class="fa-solid fa-arrow-up"></i></a></div>
+    </footer>
+
+    
+<script src="main.js"></script>
+</body>
+
+</html>
