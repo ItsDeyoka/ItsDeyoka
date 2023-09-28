@@ -545,8 +545,8 @@ form .check1 {
   .third-image {
     border: 5px solid rgb(128, 128, 128);
     border-radius: 10px;
-    height: 73vh;
-    width: 450px;
+    height: 55vh;
+    width: 300px;
     transition: transform 0.9s ease;
   }
 
